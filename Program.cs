@@ -1,32 +1,33 @@
-﻿int weekDay = Convert.ToInt32(DateTime.Now.DayOfWeek);
-
-Console.WriteLine(weekDay);
+﻿//odd or even
 
 
-switch (weekDay)
+int a = 11;
+
+int result = a % 2;
+
+Console.WriteLine(result);
+
+
+
+//if (result == 0) {
+//    Console.WriteLine($"{a} is an even number" );
+
+//}
+//else
+//{
+//    Console.WriteLine($"{a} is an odd number ");
+//}
+
+
+switch (result)
 {
     case 0:
-        Console.WriteLine("sunday");
+        Console.WriteLine($"{a} is an even number");
         break;
     case 1:
-        Console.WriteLine("Monday");
-        break;
-    case 2:
-        Console.WriteLine("Tuesday");
-        break;
-    case 3:
-        Console.WriteLine("Wednesday");
-        break;
-    case 4:
-        Console.WriteLine("Thursday");
-        break;
-    case 5:
-        Console.WriteLine("Friday");
-        break;
-    case 6:
-        Console.WriteLine("Saturday");
+        Console.WriteLine($"{a} is an odd number");
         break;
     default:
-        Console.WriteLine("Invaldi value");
+        Console.WriteLine("invalid value");
         break;
 }
